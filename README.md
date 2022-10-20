@@ -6,39 +6,88 @@
 **Writing** adalah _lightweight distraction-free_ teks editor di browser.
 
 
-## Instalasi #1
+## Instalasi #1 (Hosting di Heroku)
 
 #### Kebutuhan Sistem
-- git
-- Heroku CLI
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+- Git account
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+- Heroku account
 
 
 #### Langkah instalasi dalam CLI.
-1. Clone *Writing* ke dalam direktori kita
+1. Fork repository *Writing* ke akun github personal
+   - Tekan tombol Fork
+![image](https://user-images.githubusercontent.com/70611863/196932464-53eb7824-0c71-4b57-887f-5455b41c3b90.png)
+
+   - Pilih Create fork
+![image](https://user-images.githubusercontent.com/70611863/196934169-df0db5fc-003e-45ff-9638-45d8a72431e5.png)
+
+2. Buat file bernama index.php
    ```
-   $ git clone https://github.com/josephernest/writing.git
+   touch index.php
    ```
    
-2. Login kedalam Heroku CLI
+3. Buat file bernama composer.json
+   ```
+   touch composer.json
+   ```
+
+4. Dengan text editor, masukkan kode berikut ke dalam file-file tersebut
+   - index.php
+   ```
+   <?php include_once("index.html"); ?>
+   ```
+   
+   - composer.json
+   ```
+   {}
+   ```
+5. Commit kedua file tersebut ke dalam fork github yang telah dibuat
+   - Klik tombol Add file dan pilih Upload files
+![image](https://user-images.githubusercontent.com/70611863/196934444-e015fd1c-c914-4dfa-8c13-c3eea04d0b73.png)
+
+   - Masukkan file index.php dan composer.json lalu tekan Commit changes
+![image](https://user-images.githubusercontent.com/70611863/196934701-3686adab-df69-4078-816d-ea4c4315389a.png)
+
+
+6. Clone repositori *Writing* yang telah ditambahkan index.php dan composer.json ke direktori lokal
+   - Tekan tombol Code dan copy link repository
+![image](https://user-images.githubusercontent.com/70611863/196936172-40e2c4a6-2d1e-49ba-9bc4-26e223afa68e.png)
+
+   - Buka cmd dalam direktori yang diinginkan lalu masukkan command
+   ```
+   git clone https://github.com/Raff-28/writing.git
+   cd writing
+   ```
+   
+7. Login kedalam Heroku CLI
    ```
    heroku login
    ```
-
-3. Membuat heroku app dengan nama komdatp3-kel7
+ 
+8. Membuat heroku app dengan nama komdatp3-kel7
    ```
    heroku create komdatp3-kel7
    ```
    
-4. Mendeploy aplikasi ke heroku
+9. Mendeploy aplikasi ke heroku
    ```
-   git push heroku main
+   git push heroku master
    ```
+   
+10. Membuka aplikasi *Writing* yang telah dihost pada Heroku
+      ```
+      heroku open
+      ```
 
 
-## Instalasi #2
+## Instalasi #2 (Hosting di Netlify)
 
 #### Kebutuhan Sistem
-- Tidak ada
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+- Git account
+- Netlify account
 
 
 #### Langkah instalasi.
