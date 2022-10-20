@@ -16,7 +16,7 @@
 
 
 #### Langkah instalasi dalam CLI.
-1. Fork repository *Writing* ke akun github personal
+1. Fork repository [*Writing*](https://github.com/josephernest/writing) ke akun github personal
    - Tekan tombol Fork
 ![image](https://user-images.githubusercontent.com/70611863/196932464-53eb7824-0c71-4b57-887f-5455b41c3b90.png)
 
@@ -176,3 +176,4 @@ Jika dibandingkan dengan editor sejenisnya seperti **StackEdit**, editor ini mem
 2. [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - Heroku CLI
 3. [Netlify](https://www.netlify.com/) - Netlify
 4. [StackEdit](https://stackedit.io/) - StackEdit
+5. [[10 Step Guide] How to deploy HTML on Heroku app the quick and easy way!](https://consultantsussex.com/deploy-html-on-heroku/) - White Rabbit Consultancy
