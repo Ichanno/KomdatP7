@@ -11,6 +11,7 @@
 #### Kebutuhan Sistem
 - Heroku CLI
 
+
 #### Langkah instalasi dalam CLI.
 1. Clone *Writing* ke dalam direktori kita
    ```
@@ -32,30 +33,24 @@
    git push heroku main
    ```
 
-## Konfigurasi (opsional)
 
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-- batas upload file
-- batas memori
-- dll
+## Konfigurasi
 
-Plugin untuk fungsi tambahan
-- login dengan Google/Facebook
-- editor Markdown
-- dll
+Tidak ada
 
 
-##  Maintenance (opsional)
+##  Maintenance
 
 Untuk melakukan perubahan pada kode menggunakan CLI, dilakukan sebagai berikut.
    ```
    git add .
    git commit -am "Commit desc"
    ```
+   
 
-## Otomatisasi (opsional)
+## Otomatisasi
 
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
+Tidak ada
 
 
 ## Cara Pemakaian
@@ -66,7 +61,7 @@ Cara pemakaian **Writing** ini sangat mudah. Berikut untuk lebih jelasnya :
 - CTRL + P: Print atau export dalam bentuk PDF
 - CTRL + S: Menyimpan source code dalam bentuk file .MD
 
-dan beberapa comman lain yang dapat dilihat pada:
+dan beberapa command lain yang dapat dilihat pada:
 
 - CTRL + SHIFT + H: Show help
 
@@ -76,11 +71,25 @@ dan beberapa comman lain yang dapat dilihat pada:
 
 
 ## Pembahasan
+**Writing** merupakan editor *markdown* yang cukup simpel. Beberapa kelebihan dari editor ini yaitu:
+- *Fast rendering* (Tidak ada delay dan flickering).
+- Sesuai kebutuhan utama
+   - write
+   - preview
+   - save code
+   - print / save as pdf
+- Minimalist / Distraction-free (Dapat langsung dipakai tanpa welcome page, login page, dsb).
 
-- Pendapat anda tentang aplikasi web ini
-    - kelebihan
-    - kekurangan
-- Bandingkan dengan aplikasi web lain yang sejenis
+Tentu saja, sebuah aplikasi pasti memiliki kekurangan. Kekurangan yang dimiliki **Writing** antara lain:
+- Kurang menarik dari segi tampilan. 
+- Tidak ada otomatisasi fitur atau shortcut untuk memudahkan pengetikan seperti **bold**, *italic*, ~~strikethrough~~, dsb
+- Harus mengingat atau menghafal syntax untuk menulis markdown
+
+Jika dibandingkan dengan editor sejenisnya seperti **StackEdit**, editor ini memiliki beberapa keunggulan dan kelemahan. Berikut adalah beberapa perbandingan antara keduanya :
+- **Writing** menyediakan editor *lightweight* yang simpel, minimalis, sesuai kebutuhan, dan tidak ada delay ataupun flicker.
+- Kekurangannya yaitu kurang menarik dari segi tampilan dan tidak adanya fitur otomatisasi yang dapat memudahkan pengetikan.
+- **StackEdit** lebih menarik dari segi tampilan, serta memiliki fitur otomatisasi yang cukup lengkap. 
+- Sayangnya editor ini memiliki kekurangan yang dirasa cukup mengganggu, yaitu adanya delay dan seringnya terjadi flicker ketika ada persamaan matematika dalam ketikan. 
 
 
 ## Referensi
